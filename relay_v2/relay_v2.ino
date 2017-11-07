@@ -1,5 +1,5 @@
 /*****************************************************************************************
-* FILENAME :        relay_v2.c             DESIGN REF: 00003FW
+* FILENAME :        relay_v2.c             
 *
 * DESCRIPTION :
 *       File to support relay wemos shield 
@@ -40,8 +40,6 @@
 * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
-*
-* 
 *
 *****************************************************************************************/
 
