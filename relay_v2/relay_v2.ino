@@ -258,7 +258,11 @@ void reconnect()
     Serial.println(mqttData_sts.dev_short);
     if (client_sts.connect(mqttData_sts.dev_short, mqttData_sts.login, mqttData_sts.pw)) {
       Serial.println("[mqtt] connected");
-
+      client_sts.loop();
+      Serial.print("[mqtt] subscribed generic: ");
+      Serial.println(MQTT_SUB_COMMAND);
+      client_sts.subscribe(build_topic(MQTT_SUB_COMMAND));  // request general command with payload
+      client_sts.loop();
       // ... and resubscribe
       relay_Reconnect();
 

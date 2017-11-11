@@ -47,6 +47,7 @@ vAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 * REF NO  VERSION DATE    WHO     DETAIL
 * 000       16.10         SWI     migration from template      
 * 001       05.11         SWI     migrated from template
+* 002       11.11         SWI     add generic command subscription
 *
 *****************************************************************************************/
 
@@ -221,9 +222,6 @@ void relay_Reconnect()
   Serial.print("[mqtt] subscribed 2: ");
   Serial.println(MQTT_SUB_BUTTON);
   client_sts.loop();
-  Serial.print("[mqtt] subscribed 3: ");
-  Serial.println(MQTT_SUB_COMMAND);
-  client_sts.subscribe(build_topic(MQTT_SUB_COMMAND));  // request general command with payload
 }
 
 /****************************************************************************************/

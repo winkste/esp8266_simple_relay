@@ -38,7 +38,7 @@ vAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 /****************************************************************************************/
 /* Global constant defines: */
 #define FW_IDENTIFIER             "00003FW" // Firmware identification
-#define FW_VERSION                "001"     // Firmware Version
+#define FW_VERSION                "002"     // Firmware Version
 #define FW_DESCRIPTION            "WEMOS RELAY"
 
 #define MQTT_SUB_TOGGLE           "/simple_relay/toggle" // command message for toggle command
